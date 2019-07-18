@@ -1,26 +1,28 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Container} from 'reactstrap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import AppNavbar from "./components/Navbar";
+import RegisterModal from "./components/RegisterModal";
+import UserData from "./components/UserData";
+import LoginModal from "./components/LoginModal";
+import ErrorAlert from "./components/ErrorAlert";
+
+
+class App extends React.Component {
+    render() {
+        return (
+            <div className="App">
+                <AppNavbar/>
+                <Container>
+                    <RegisterModal/>
+                    <UserData/>
+                    <LoginModal/>
+                </Container>
+                <ErrorAlert/>
+            </div>
+        );
+    }
 }
 
 export default App;

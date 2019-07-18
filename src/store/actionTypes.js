@@ -1,0 +1,13 @@
+//register new user types
+export const REGISTER_USER_ATTEMPT = 'REGISTER_USER_ATTEMPT';
+export const REGISTER_USER_WAIT = 'REGISTER_USER_WAIT';
+export const REGISTER_USER_SUCCESS = 'REGISTER_USER_SUCCESS';
+export const REGISTER_USER_FAIL = 'REGISTER_USER_FAIL';
+
+//login user types
+export const LOGIN_USER_ATTEMPT = 'LOGIN_USER_ATTEMPT';
+export const LOGIN_USER_WAIT = 'LOGIN_USER_WAIT';
+export const LOGIN_USER_SUCCESS = 'LOGIN_USER_SUCCESS';
+export const LOGIN_USER_FAIL = 'LOGIN_USER_FAIL';
+
+
