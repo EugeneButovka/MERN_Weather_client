@@ -13,7 +13,7 @@ import {
 const initialState = {
     userData: {},
     isLogined: false,
-    isLoading: false,
+    requestCompleted: false,
     error: ''
 };
 
@@ -58,7 +58,7 @@ export default function (state = initialState, action) {
             return {
                 ...state,
                 userData: action.payload,
-                isLogined: true,
+                // isLogined: true,
                 isLoading: false,
                 error: ''
             };
@@ -67,7 +67,23 @@ export default function (state = initialState, action) {
                 ...initialState,
                 error: 'fail to login'
             };
-    
+        case 'CHECK_LOGIN_REQUEST':
+            return {
+                ...initialState,
+                
+            };
+        case 'CHECK_LOGIN_SUCCESS':
+            return {
+                ...initialState,
+                isLogined: true,
+                requestCompleted: true,
+            };
+        case 'CHECK_LOGIN_FAIL':
+            return {
+                ...initialState,
+                isLogined: false,
+                requestCompleted: true,
+            };
         //default routine
         default:
             return state;

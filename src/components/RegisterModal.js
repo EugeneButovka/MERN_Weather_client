@@ -11,7 +11,7 @@ import {
     Alert
 } from 'reactstrap';
 import {connect} from 'react-redux';
-import {registerUserAction} from '../store/thunks/userThunks';
+import {registerUser} from '../store/thunks/userThunks';
 import {setRegisterUserWaitAction} from '../store/actions/userActions';
 
 
@@ -167,6 +167,6 @@ class RegisterModal extends React.Component {
 }
 
 
-export default connect(null, {registerUserAction, setUserRegistringWaitAction: setRegisterUserWaitAction})(RegisterModal);
+export default connect(null, {registerUserAction: registerUser, setUserRegistringWaitAction: setRegisterUserWaitAction})(RegisterModal);
 
 

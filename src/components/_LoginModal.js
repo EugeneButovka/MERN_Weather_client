@@ -12,7 +12,7 @@ import {
     Container
 } from 'reactstrap';
 import {connect} from 'react-redux';
-import {loginUserAction} from '../store/thunks/userThunks';
+import {loginUser} from '../store/thunks/userThunks';
 import {setLoginUserWaitAction} from '../store/actions/userActions';
 
 
@@ -134,6 +134,6 @@ class _LoginModal extends React.Component {
     users: state.userStore.users //i.e Global Redux State
 });*/
 
-export default connect(null, {loginUserAction, setUserLoginWaitAction: setLoginUserWaitAction})(_LoginModal);
+export default connect(null, {loginUserAction: loginUser, setUserLoginWaitAction: setLoginUserWaitAction})(_LoginModal);
 
 

@@ -11,7 +11,7 @@ import {
     Alert
 } from 'reactstrap';
 import {connect} from 'react-redux';
-import {loginUserAction} from '../store/thunks/userThunks';
+import {loginUser} from '../store/thunks/userThunks';
 import {setLoginUserWaitAction} from '../store/actions/userActions';
 
 
@@ -139,6 +139,6 @@ class LoginModal extends React.Component {
 }
 
 
-export default connect(null, {loginUserAction, setUserLoginWaitAction: setLoginUserWaitAction})(LoginModal);
+export default connect(null, {loginUserAction: loginUser, setUserLoginWaitAction: setLoginUserWaitAction})(LoginModal);
 
 
