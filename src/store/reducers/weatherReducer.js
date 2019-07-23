@@ -2,14 +2,21 @@ import {
     GET_WEATHER_REQUEST,
     GET_WEATHER_SUCCESS,
     GET_WEATHER_FAIL,
-    CLEAR_WEATHER_DATA
+    
+    CLEAR_WEATHER_DATA,
+    
+    SAVE_WEATHER_DATA_REQUEST,
+    SAVE_WEATHER_DATA_SUCCESS,
+    SAVE_WEATHER_DATA_FAIL
 } from "../actionTypes";
 
 const initialState = {
     weatherData: {},
     requestCompleted: false,
     error: null,
-    isLoading: false
+    isLoading: false,
+    isSaving: false,
+    saveCompleted: false
 };
 
 export default function (state = initialState, action) {
@@ -45,6 +52,27 @@ export default function (state = initialState, action) {
                 requestCompleted: false,
                 isLoading: false,
                 error: null
+            };
+            
+    
+        case SAVE_WEATHER_DATA_REQUEST:
+            return {
+                ...state,
+                isSaving: true
+            };
+        case SAVE_WEATHER_DATA_SUCCESS:
+            return {
+                ...state,
+                saveCompleted: true,
+                error: null,
+                isSaving: false
+            };
+        case SAVE_WEATHER_DATA_FAIL:
+            return {
+                ...state,
+                saveCompleted: false,
+                isSaving: false,
+                error: 'weather save fail'
             };
             
             

@@ -19,9 +19,16 @@ export const CHECK_LOGIN_FAIL = 'CHECK_LOGIN_FAIL';
 export const LOGOUT_USER = 'LOGOUT_USER';
 
 
-//weather
+//get weather from weather api
 export const GET_WEATHER_REQUEST = 'GET_WEATHER_REQUEST';
 export const GET_WEATHER_SUCCESS = 'GET_WEATHER_SUCCESS';
 export const GET_WEATHER_FAIL = 'GET_WEATHER_FAIL';
+
+//clear collected weather data
 export const CLEAR_WEATHER_DATA = 'CLEAR_WEATHER_DATA';
+
+//save collected weather data to DB
+export const SAVE_WEATHER_DATA_REQUEST = 'SAVE_WEATHER_DATA_REQUEST';
+export const SAVE_WEATHER_DATA_SUCCESS = 'SAVE_WEATHER_DATA_SUCCESS';
+export const SAVE_WEATHER_DATA_FAIL = 'SAVE_WEATHER_DATA_FAIL';
 

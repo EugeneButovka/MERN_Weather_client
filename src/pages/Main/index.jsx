@@ -16,7 +16,13 @@ const DivFixedStyled = styled.div`
 `;
 
 
-class Main extends React.Component {
+class Main extends React.PureComponent {
+    // componentDidUpdate() {
+    //     //saving weather data to DB if have some
+    //     if (this.props.weather.requestCompleted && !this.props.weather.error)
+    //         this.performWeatherSave();
+    // }
+    
     performWeatherRequest = (place) => {
         console.log('Place is set to: ', place);
         try {
@@ -28,6 +34,18 @@ class Main extends React.Component {
         }
         catch (err) {
             console.log('weather request fail!');
+            throw err;
+        }
+    };
+    
+    performWeatherSave = () => {
+        console.log('Trying to save collected weather data: ', this.props.weather.weatherData);
+        try {
+            this.props.saveWeatherData(this.props.weather.weatherData);
+            return true;
+        }
+        catch (err) {
+            console.log('weather save fail!');
             throw err;
         }
     };
@@ -55,7 +73,7 @@ class Main extends React.Component {
     };
     
     
-    renderWeatherTable = () => {
+    renderWeatherTable() {
         if (this.props.weather.isLoading)
             return <div>Loading weather...</div>;
         
@@ -94,6 +112,16 @@ class Main extends React.Component {
         )
     };
     
+    renderWeatherSaveStatus() {
+        if (!this.props.weather.requestCompleted)
+            return <div>No data to save</div>;
+        if (!this.props.weather.saveCompleted)
+            return <div>Weather data saving in progress</div>;
+        if (this.props.weather.saveCompleted)
+            return <div>Weather data saved to DB</div>;
+        return null;
+    }
+    
     render() {
         return (
             <Container>
@@ -108,6 +136,7 @@ class Main extends React.Component {
                     componentRestrictions={{country: "ru"}}
                 />
                 {this.renderWeatherTable()}
+                {/*{this.renderWeatherSaveStatus()}*/}
             </Container>
         );
     }
