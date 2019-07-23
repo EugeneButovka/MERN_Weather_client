@@ -3,9 +3,11 @@ import thunk from 'redux-thunk';
 import {combineReducers} from 'redux';
 
 import userReducer from "./reducers/userReducer";
+import weatherReducer from "./reducers/weatherReducer";
 
 const combinedReducers = combineReducers({
-    userStore: userReducer
+    userStore: userReducer,
+    weatherStore: weatherReducer
 });
 
 const initialState = {};

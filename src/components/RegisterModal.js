@@ -65,12 +65,13 @@ class RegisterModal extends React.Component {
             email,
             password
         };
-        
-        //add user via addUser action
-        this.props.registerUserAction(newUser);
-        
-        //close modal
-        this.toggle();
+    
+        //try add user  and set waiting till done
+        this.props.setRegisterUserWaitAction();
+        this.props.registerUser(newUser);
+    
+        //reset state
+        this.setState({...this.initialState});
     };
     
     handleError() {
@@ -167,6 +168,6 @@ class RegisterModal extends React.Component {
 }
 
 
-export default connect(null, {registerUserAction: registerUser, setUserRegistringWaitAction: setRegisterUserWaitAction})(RegisterModal);
+export default connect(null, {registerUser, setRegisterUserWaitAction})(RegisterModal);
 
 

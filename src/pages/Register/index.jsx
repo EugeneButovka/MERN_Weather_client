@@ -9,18 +9,12 @@ import {
     Alert
 } from 'reactstrap';
 import {connect} from 'react-redux';
-import {loginUser} from '../../store/thunks/userThunks';
-import {withRouter} from "react-router-dom";
-import styled from 'styled-components';
-
-const StyledButton = styled(Button)`
-    color: ${props => props.color}
-    margin-top: 2rem
-`;
+import {registerUser} from '../../store/thunks/userThunks';
 
 
-class LoginNoRouter extends React.Component {
+class Register extends React.Component {
     initialState = {
+        name: '',
         email: '',
         password: '',
         error: null
@@ -35,14 +29,18 @@ class LoginNoRouter extends React.Component {
     };
     
     validateInput = () => {
-        const {email, password} = this.state;
-        
+        const {name, email, password, password2} = this.state;
+    
         //simple validation
-        if (!email || !password) {
+        if (!name || !email || !password) {
             this.setState({error: "please fill the form!"});
             return false;
         }
-        
+        if (password !== password2) {
+            this.setState({error: "passwords no not match!"});
+            return false;
+        }
+    
         this.setState({error: null});
         return true;
     };
@@ -50,18 +48,23 @@ class LoginNoRouter extends React.Component {
     onSubmit = e => {
         e.preventDefault();
         if (!this.validateInput()) return;
-        
-        const {email, password} = this.state;
-        
-        //add user via addUser action
-        Promise.resolve(this.props.loginUser({email, password}))
-            .then(this.props.history.push.bind(this,"/"));
-        
-        //reset state
-        //this.setState({...this.initialState});
     
-        //get back to main page
-        //this.props.history.push("/");
+        const {name, email, password} = this.state;
+    
+    
+        const newUser = {
+            name,
+            email,
+            password
+        };
+    
+        //reset state
+        this.setState({...this.initialState});
+        
+        //try add user  and set waiting till done
+        this.props.setRegisterUserWaitAction();
+        Promise.resolve(this.props.registerUser(newUser))
+            .then(this.props.history.push.bind(this,"/"));
     };
     
     handleError() {
@@ -80,6 +83,17 @@ class LoginNoRouter extends React.Component {
                     onSubmit={this.onSubmit}
                 >
                     <FormGroup>
+                        <Label for={"name"}>
+                            Name
+                        </Label>
+                        <Input
+                            type={"text"}
+                            name={"name"}
+                            id={"name"}
+                            placeholder={"enter user name"}
+                            onChange={this.onChange}
+                        />
+    
                         <Label for={"email"}>
                             E-Mail
                         </Label>
@@ -90,7 +104,7 @@ class LoginNoRouter extends React.Component {
                             placeholder={"enter user e-mail"}
                             onChange={this.onChange}
                         />
-                        
+    
                         <Label for={"password"}>
                             Password
                         </Label>
@@ -101,14 +115,25 @@ class LoginNoRouter extends React.Component {
                             placeholder={"enter user password"}
                             onChange={this.onChange}
                         />
-                        
+    
+                        <Label for={"password2"}>
+                            Repeat Password
+                        </Label>
+                        <Input
+                            type={"text"}
+                            name={"password2"}
+                            id={"password2"}
+                            placeholder={"enter password again"}
+                            onChange={this.onChange}
+                        />
                         {this.handleError()}
-                        <StyledButton
-                            color="dark"
+                        <Button
+                            color={"dark"}
+                            style={{marginTop: '2rem'}}
                             block
                         >
-                            Login as User
-                        </StyledButton>
+                            Add User
+                        </Button>
                     </FormGroup>
                 </Form>
             </Container>
@@ -117,8 +142,6 @@ class LoginNoRouter extends React.Component {
 }
 
 
-const Login = withRouter(LoginNoRouter);
-
-export default connect(null, {loginUser})(Login);
+export default connect(null, {registerUser})(Register);
 
 

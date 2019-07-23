@@ -1,86 +1,57 @@
 import {instance} from "../../core/axios";
-import { loginUserAttemptAction, loginUserSuccessAction, loginUserFailAction } from '../actions/userActions';
 import {
-    REGISTER_USER_ATTEMPT,
-    REGISTER_USER_SUCCESS,
-    REGISTER_USER_FAIL,
-    
-    LOGIN_USER_ATTEMPT,
-    LOGIN_USER_SUCCESS,
-    LOGIN_USER_FAIL
-} from "../actionTypes";
+    registerUserRequestAction,
+    registerUserSuccessAction,
+    registerUserFailAction,
+    loginUserRequestAction,
+    loginUserSuccessAction,
+    loginUserFailAction,
+    checkLoginRequestAction,
+    checkLoginSuccessAction,
+    checkLoginFailAction
+} from '../actions/userActions';
+
 
 export const loginUser = user => async dispatch => {
-    console.log('Login attempt: ', user);
-    dispatch(loginUserAttemptAction());
+    console.log('Login request: ', user);
+    dispatch(loginUserRequestAction());
     
     try {
-        const res = await instance.post('/auth/login');
-        dispatch(loginUserSuccessAction(res));
-        localStorage.setItem('token', res.token)
+        const res = await instance.post('/auth/login', user);
+        console.log('Login success: ', res);
+        dispatch(loginUserSuccessAction(res.data));
+        localStorage.setItem('token', res.data.token)
     } catch (error) {
         console.log('Login error: ', error);
         dispatch(loginUserFailAction(error));
     }
-   
-    
-    // await axios
-    //     .post('/auth/login', user)
-    //     .then(res => {
-    //         console.log('Login success: ', res.data);
-    //         dispatch({
-    //             type: LOGIN_USER_SUCCESS,
-    //             payload: res.data
-    //         });
-    //     })
-    //     .catch(error => {
-    //         console.log('Login error: ', error);
-    //         dispatch({
-    //             type: LOGIN_USER_FAIL,
-    //             payload: error
-    //         });
-    //     });
 };
 
 export const registerUser = user => async dispatch => {
-    console.log('Register attempt: ', user);
-    dispatch({
-        type: REGISTER_USER_ATTEMPT
-    });
+    console.log('Register request: ', user);
+    dispatch(registerUserRequestAction());
     
-    // await axios
-    //     .post('/auth/register', user)
-    //     .then(res => {
-    //         console.log('Register success: ', res.data);
-    //         dispatch({
-    //             type: REGISTER_USER_SUCCESS,
-    //             payload: res.data
-    //         });
-    //     })
-    //     .catch(error => {
-    //         console.log('Register error: ', error);
-    //         dispatch({
-    //             type: REGISTER_USER_FAIL,
-    //             payload: error
-    //         });
-    //     });
+    let res = null;
+    try {
+        res = await instance.post('/auth/register', user);
+        console.log('Register success: ', res.data);
+        dispatch(registerUserSuccessAction(res.data));
+    } catch (error) {
+        console.log('Register error: ', error.response);
+        dispatch(registerUserFailAction(error));
+    }
 };
 
 export const checkLogin = () => async dispatch => {
-    dispatch({
-        type: 'CHECK_LOGIN_REQUEST'
-    });
+    console.log('Check login request');
+    dispatch(checkLoginRequestAction());
+    
     try {
-        const res = await instance.post('/auth/checkLogin');
-        dispatch({
-            type: 'CHECK_LOGIN_SUCCESS',
-            payload: res.data
-        });
+        const res = await instance.get('/auth/checkLogin');
+        console.log('Check login success: ', res.data);
+        dispatch(checkLoginSuccessAction(res.data));
     } catch (error) {
-        console.log('Login error: ', error);
-        dispatch({
-            type: 'CHECK_LOGIN_FAIL',
-            payload: error
-        });
+        console.log('Register error: ', error);
+        dispatch(checkLoginFailAction(error));
     }
 };

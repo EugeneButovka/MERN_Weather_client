@@ -1,14 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import {Container} from 'reactstrap';
+//import {Container} from 'reactstrap';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import AppNavbar from "./components/Navbar";
+import AppNavbar from "./components/AppNavbar";
 import Protected from './pages/Protected';
-import RegisterModal from "./components/RegisterModal";
-import UserData from "./components/UserData";
-import LoginModal from "./components/LoginModal";
-import ErrorAlert from "./components/ErrorAlert";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 
 class App extends React.Component {
@@ -19,23 +17,18 @@ class App extends React.Component {
                 <div>
                     <AppNavbar/>
                     <Switch>
-                        <Route exact path="/login" component={() => <h1>LOGIN</h1>} />
-                        <Route exact path="/register" component={() => <h1>Register</h1>} />
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="/register" component={Register} />
                         <Route path="/" component={Protected} />
                     </Switch>
                 </div>
             </Router>
-            // <div className="App">
-            //     <AppNavbar/>
-            //     <Container>
-            //         <RegisterModal/>
-            //         <UserData/>
-            //         <LoginModal/>
-            //     </Container>
-            //     <ErrorAlert/>
-            // </div>
         );
     }
 }
+//TODO: main page - google react auto complete
+//TODO: user about&back end req
+//TODO: user weatherlist&back end req
+//TODO: user weather details&back end req
 
 export default App;

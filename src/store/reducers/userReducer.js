@@ -1,89 +1,117 @@
 import {
-    REGISTER_USER_WAIT,
-    REGISTER_USER_ATTEMPT,
+
+    REGISTER_USER_REQUEST,
     REGISTER_USER_SUCCESS,
     REGISTER_USER_FAIL,
     
-    LOGIN_USER_WAIT,
-    LOGIN_USER_ATTEMPT,
+
+    LOGIN_USER_REQUEST,
     LOGIN_USER_SUCCESS,
-    LOGIN_USER_FAIL
+    LOGIN_USER_FAIL,
+    
+
+    CHECK_LOGIN_REQUEST,
+    CHECK_LOGIN_SUCCESS,
+    CHECK_LOGIN_FAIL,
+    
+    LOGOUT_USER
 } from "../actionTypes";
 
 const initialState = {
-    userData: {},
+    //userData: {},
     isLogined: false,
     requestCompleted: false,
-    error: ''
+    error: null,
+    currentUserId: null,
+    isLoading: false
 };
 
 export default function (state = initialState, action) {
     switch (action.type) {
         //register routine
-        case REGISTER_USER_WAIT:
+        case REGISTER_USER_REQUEST:
             return {
                 ...state,
-                isLoading: true,
-            };
-        case REGISTER_USER_ATTEMPT:
-            return {
-                ...state,
-                error: ''
+                isLoading: true
             };
         case REGISTER_USER_SUCCESS:
             return {
                 ...state,
-                userData: action.payload,
-                isLoading: false,
-                error: ''
+                //isLogined: true, //performing login in a separate action
+                requestCompleted: true,
+                error: null,
+                isLoading: false
             };
         case REGISTER_USER_FAIL:
             return {
-                ...initialState,
-                error: 'fail to register'
+                ...state,
+                requestCompleted: true,
+                error: 'fail to register',
+                isLoading: false
             };
         
         //login routine
-        case LOGIN_USER_WAIT:
+        case LOGIN_USER_REQUEST:
             return {
                 ...state,
                 isLoading: true,
             };
-        case LOGIN_USER_ATTEMPT:
-            return {
-                ...state,
-                error: ''
-            };
         case LOGIN_USER_SUCCESS:
+            console.log(action);
             return {
                 ...state,
-                userData: action.payload,
-                // isLogined: true,
-                isLoading: false,
-                error: ''
+                isLogined: true,
+                requestCompleted: true,
+                error: null,
+                currentUserId: action.payload.currentUserId,
+                isLoading: false
             };
         case LOGIN_USER_FAIL:
             return {
-                ...initialState,
-                error: 'fail to login'
-            };
-        case 'CHECK_LOGIN_REQUEST':
-            return {
-                ...initialState,
-                
-            };
-        case 'CHECK_LOGIN_SUCCESS':
-            return {
-                ...initialState,
-                isLogined: true,
-                requestCompleted: true,
-            };
-        case 'CHECK_LOGIN_FAIL':
-            return {
-                ...initialState,
+                ...state,
                 isLogined: false,
                 requestCompleted: true,
+                error: 'fail to login',
+                isLoading: false
             };
+    
+    
+        //check login routine
+        case CHECK_LOGIN_REQUEST:
+            return {
+                ...state,
+                isLoading: true
+            };
+        case CHECK_LOGIN_SUCCESS:
+            return {
+                ...state,
+                isLogined: true,
+                requestCompleted: true,
+                error: null,
+                isLoading: false
+            };
+        case CHECK_LOGIN_FAIL:
+            return {
+                ...state,
+                isLogined: false,
+                requestCompleted: true,
+                error: 'check login fail',
+                currentUserId: null,
+                isLoading: false
+            };
+            
+            
+    
+        case LOGOUT_USER:
+            return {
+                ...state,
+                isLogined: false,
+                requestCompleted: true,
+                error: null,
+                currentUserId: null
+            };
+            
+            
         //default routine
         default:
             return state;

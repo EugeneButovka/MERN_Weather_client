@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// Set config defaults when creating the instance
+// instance for local server - DB for users and queries
 export const instance = axios.create({
     baseURL: 'http://localhost:5000'
 });
@@ -10,8 +10,25 @@ export const instance = axios.create({
 
 instance.interceptors.request.use(
     config => {
-        config.headers.Token = localStorage.getItem("token");
+        config.headers.token = localStorage.getItem("token");
         return config;
     },
     error => Promise.reject(error)
 );
+
+
+
+
+// instance for external weather API requests
+export const weatherInstance = axios.create({
+    baseURL: 'https://api.openweathermap.org/data/2.5'
+});
+
+/*
+weatherInstance.interceptors.request.use(
+    config => {
+        config.headers.token = localStorage.getItem("token");
+        return config;
+    },
+    error => Promise.reject(error)
+);*/
