@@ -4,10 +4,6 @@ import {
     GET_WEATHER_FAIL,
     
     CLEAR_WEATHER_DATA,
-    
-    SAVE_WEATHER_DATA_REQUEST,
-    SAVE_WEATHER_DATA_SUCCESS,
-    SAVE_WEATHER_DATA_FAIL
 } from "../actionTypes";
 
 const initialState = {
@@ -53,29 +49,6 @@ export default function (state = initialState, action) {
                 isLoading: false,
                 error: null
             };
-            
-    
-        case SAVE_WEATHER_DATA_REQUEST:
-            return {
-                ...state,
-                isSaving: true
-            };
-        case SAVE_WEATHER_DATA_SUCCESS:
-            return {
-                ...state,
-                saveCompleted: true,
-                error: null,
-                isSaving: false
-            };
-        case SAVE_WEATHER_DATA_FAIL:
-            return {
-                ...state,
-                saveCompleted: false,
-                isSaving: false,
-                error: 'weather save fail'
-            };
-            
-            
         //default routine
         default:
             return state;

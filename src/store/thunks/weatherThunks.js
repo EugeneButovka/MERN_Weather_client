@@ -3,10 +3,6 @@ import {
     getWeatherRequestAction,
     getWeatherSuccessAction,
     getWeatherFailAction,
-    
-    saveWeatherDataRequestAction,
-    saveWeatherDataSuccessAction,
-    saveWeatherDataFailAction
 } from '../actions/weatherActions';
 
 
@@ -22,37 +18,5 @@ export const getWeather = (lat, long) => async dispatch => {
     } catch (error) {
         console.log('Weather API get and save to DB error: ', error);
         dispatch(getWeatherFailAction(error));
-    }
-};
-
-
-//can be removed safely
-export const saveWeatherData = data => async dispatch => {
-    console.log('Saving data to DB: ', data);
-    dispatch(saveWeatherDataRequestAction());
-    
-    let res = null;
-    try {
-        res = await instance.post('/api/weather', data);
-        console.log('Save weather data success: ', res.data);
-        dispatch(saveWeatherDataSuccessAction(res.data));
-    } catch (error) {
-        console.log('Save weather data error: ', error.response);
-        dispatch(saveWeatherDataFailAction(error));
-    }
-};
-
-
-export const getWeatherHistory = () => async dispatch => {
-    console.log('Weather History request');
-    dispatch(getWeatherHistoryRequestAction());
-    
-    try {
-        const res = await instance.get('/api/weather');
-        console.log('Weather history list obtained: ', res.data);
-        dispatch(getWeatherHistorySuccessAction(res.data));
-    } catch (error) {
-        console.log('Weather history list error: ', error);
-        dispatch(getWeatherHistoryFailAction(error));
     }
 };

@@ -4,10 +4,12 @@ import {combineReducers} from 'redux';
 
 import userReducer from "./reducers/userReducer";
 import weatherReducer from "./reducers/weatherReducer";
+import historyReducer from "./reducers/histroryReducer";
 
 const combinedReducers = combineReducers({
     userStore: userReducer,
-    weatherStore: weatherReducer
+    weatherStore: weatherReducer,
+    historyStore: historyReducer
 });
 
 const initialState = {};

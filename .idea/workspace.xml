@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a1a38e0-a9fc-4c7f-bef0-a99d30f74c0c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/store/actions/histroyActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/histroryReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/thunks/historyThunks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/weatherActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/weatherActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/weatherReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/weatherReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/thunks/weatherThunks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/thunks/weatherThunks.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,7 +36,7 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="93" />
+          <entry key="js" value="100" />
           <entry key="json" value="5" />
           <entry key="jsx" value="15" />
           <entry key="xml" value="1" />
@@ -45,7 +48,7 @@
           <entry key="HTML" value="2" />
           <entry key="JSON" value="5" />
           <entry key="JSX Harmony" value="15" />
-          <entry key="JavaScript" value="93" />
+          <entry key="JavaScript" value="100" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -54,10 +57,10 @@
           <entry key="dummy" value="15" />
           <entry key="gitignore" value="19" />
           <entry key="html" value="36" />
-          <entry key="js" value="4283" />
+          <entry key="js" value="4391" />
           <entry key="json" value="2" />
           <entry key="jsx" value="1918" />
-          <entry key="txt" value="178" />
+          <entry key="txt" value="196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -66,8 +69,8 @@
           <entry key="HTML" value="36" />
           <entry key="JSON" value="2" />
           <entry key="JSX Harmony" value="1918" />
-          <entry key="JavaScript" value="4283" />
-          <entry key="PLAIN_TEXT" value="193" />
+          <entry key="JavaScript" value="4391" />
+          <entry key="PLAIN_TEXT" value="211" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -80,10 +83,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/thunks/weatherThunks.js">
+        <entry file="file://$PROJECT_DIR$/src/store/thunks/historyThunks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="47" column="43" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="43" />
+            <state relative-caret-position="357">
+              <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -91,46 +94,46 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/actions/weatherActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="848">
-              <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#128#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/reducers/weatherReducer.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/store/thunks/weatherThunks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
               <folding>
-                <element signature="e#0#128#0" expanded="true" />
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/actionTypes.js">
+        <entry file="file://$PROJECT_DIR$/src/store/reducers/histroryReducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#234#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/store.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/Main/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="139" column="20" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,14 +173,17 @@
         <option value="$PROJECT_DIR$/src/components/googleAutocomplete.jsx" />
         <option value="$PROJECT_DIR$/src/core/weather.js" />
         <option value="$PROJECT_DIR$/src/core/axios.js" />
-        <option value="$PROJECT_DIR$/src/store/store.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/userReducer.js" />
         <option value="$PROJECT_DIR$/src/components/AppNavbar.js" />
-        <option value="$PROJECT_DIR$/src/store/actionTypes.js" />
-        <option value="$PROJECT_DIR$/src/store/reducers/weatherReducer.js" />
         <option value="$PROJECT_DIR$/src/pages/Main/index.jsx" />
-        <option value="$PROJECT_DIR$/src/store/thunks/weatherThunks.js" />
+        <option value="$PROJECT_DIR$/src/store/actionTypes.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/histroyActions.js" />
         <option value="$PROJECT_DIR$/src/store/actions/weatherActions.js" />
+        <option value="$PROJECT_DIR$/src/store/reducers/weatherReducer.js" />
+        <option value="$PROJECT_DIR$/src/store/thunks/historyThunks.js" />
+        <option value="$PROJECT_DIR$/src/store/reducers/histroryReducer.js" />
+        <option value="$PROJECT_DIR$/src/store/store.js" />
+        <option value="$PROJECT_DIR$/src/store/thunks/weatherThunks.js" />
       </list>
     </option>
   </component>
@@ -198,9 +204,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1057" />
+    <option name="x" value="4" />
+    <option name="y" value="30" />
+    <option name="width" value="1890" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -310,9 +317,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WORK\MyJSwork\mern_weather\client\src\store\thunks" />
       <recent name="C:\WORK\MyJSwork\mern_weather\client\src\store\reducers" />
       <recent name="C:\WORK\MyJSwork\mern_weather\client\src\store\actions" />
-      <recent name="C:\WORK\MyJSwork\mern_weather\client\src\store\thunks" />
       <recent name="C:\WORK\MyJSwork\mern_weather\client\src\components" />
       <recent name="C:\WORK\MyJSwork\mern_weather\client\src" />
     </key>
@@ -362,7 +369,7 @@
       <workItem from="1563444466609" duration="7917000" />
       <workItem from="1563523040386" duration="7858000" />
       <workItem from="1563785076909" duration="20418000" />
-      <workItem from="1563873423311" duration="18789000" />
+      <workItem from="1563873423311" duration="20720000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1563444978022</created>
@@ -392,17 +399,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563887556698</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="weather save to db">
+      <created>1563894225294</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563894225294</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54982000" />
+    <option name="totallyTimeSpent" value="56913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49840257" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840257" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50159746" side_tool="true" weight="0.24973656" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -458,7 +472,8 @@
     <MESSAGE value="inital commit" />
     <MESSAGE value="made register and login modals&#10;TODO: login after register&#10;TODO: jwt and hash user data" />
     <MESSAGE value="done main page with weather request&#10;TODO: save weather request to DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="done main page with weather request&#10;TODO: save weather request to DB" />
+    <MESSAGE value="weather save to db" />
+    <option name="LAST_COMMIT_MESSAGE" value="weather save to db" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -602,16 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Register/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1341">
@@ -663,20 +668,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/weatherReducer.js">
+    <entry file="file://$PROJECT_DIR$/src/store/actions/histroyActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        <state relative-caret-position="289">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="33" />
           <folding>
             <element signature="e#0#128#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/weatherReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/actionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -690,10 +702,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/thunks/weatherThunks.js">
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/histroryReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="47" column="43" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="43" />
+        <state relative-caret-position="527">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/thunks/historyThunks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
@@ -702,10 +734,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/actions/weatherActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
+        <state relative-caret-position="85">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/thunks/weatherThunks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
           <folding>
-            <element signature="e#0#128#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
