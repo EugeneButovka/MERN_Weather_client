@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a1a38e0-a9fc-4c7f-bef0-a99d30f74c0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/HistoryTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/WeatherTable.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/History/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/HistoryDetails/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/detailsActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/detailsReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/thunks/detailsThunks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/About/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ErrorAlert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RegisterModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/_LoginModal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserData.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Protected.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Protected.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Register/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/histroryReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/histroryReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/userActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/userActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/userReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/thunks/userThunks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/thunks/userThunks.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,9 +37,9 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="127" />
+          <entry key="js" value="147" />
           <entry key="json" value="6" />
-          <entry key="jsx" value="35" />
+          <entry key="jsx" value="41" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -58,20 +48,20 @@
           <entry key="Git file" value="1" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="6" />
-          <entry key="JSX Harmony" value="35" />
-          <entry key="JavaScript" value="127" />
+          <entry key="JSX Harmony" value="41" />
+          <entry key="JavaScript" value="147" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="15" />
+          <entry key="dummy" value="17" />
           <entry key="gitignore" value="19" />
           <entry key="html" value="36" />
-          <entry key="js" value="5488" />
+          <entry key="js" value="5981" />
           <entry key="json" value="2" />
-          <entry key="jsx" value="2609" />
-          <entry key="txt" value="223" />
+          <entry key="jsx" value="3127" />
+          <entry key="txt" value="257" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -79,9 +69,9 @@
           <entry key="Git file" value="19" />
           <entry key="HTML" value="36" />
           <entry key="JSON" value="2" />
-          <entry key="JSX Harmony" value="2609" />
-          <entry key="JavaScript" value="5488" />
-          <entry key="PLAIN_TEXT" value="238" />
+          <entry key="JSX Harmony" value="3127" />
+          <entry key="JavaScript" value="5981" />
+          <entry key="PLAIN_TEXT" value="274" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -92,7 +82,53 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/About/index.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/thunks/userThunks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="98" column="2" lean-forward="true" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/actionTypes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/reducers/userReducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="712">
+              <caret line="80" column="32" lean-forward="true" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#381#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -120,15 +156,12 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/RegisterModal.js" />
         <option value="$PROJECT_DIR$/src/components/Navbar.js" />
-        <option value="$PROJECT_DIR$/src/store/thunks/userThunks.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/userActions.js" />
         <option value="$PROJECT_DIR$/src/pages/Login/index.jsx" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/googleAutocomplete.jsx" />
         <option value="$PROJECT_DIR$/src/core/weather.js" />
         <option value="$PROJECT_DIR$/src/core/axios.js" />
-        <option value="$PROJECT_DIR$/src/store/reducers/userReducer.js" />
         <option value="$PROJECT_DIR$/src/store/actions/histroyActions.js" />
         <option value="$PROJECT_DIR$/src/store/actions/weatherActions.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/weatherReducer.js" />
@@ -140,17 +173,21 @@
         <option value="$PROJECT_DIR$/src/components/HistoryDetails.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/histroryReducer.js" />
         <option value="$PROJECT_DIR$/src/store/reducers/detailsReducer.js" />
-        <option value="$PROJECT_DIR$/src/store/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/store/store.js" />
         <option value="$PROJECT_DIR$/src/pages/History/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/HistoryTable.js" />
         <option value="$PROJECT_DIR$/src/store/actions/detailsActions.js" />
         <option value="$PROJECT_DIR$/src/store/thunks/detailsThunks.js" />
-        <option value="$PROJECT_DIR$/src/pages/Protected.js" />
         <option value="$PROJECT_DIR$/src/pages/HistoryDetails/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/Register/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/shared/WeatherTable.jsx" />
+        <option value="$PROJECT_DIR$/src/pages/Protected.js" />
         <option value="$PROJECT_DIR$/src/pages/Main/index.jsx" />
+        <option value="$PROJECT_DIR$/src/store/thunks/userThunks.js" />
+        <option value="$PROJECT_DIR$/src/store/actionTypes.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/userActions.js" />
+        <option value="$PROJECT_DIR$/src/store/reducers/userReducer.js" />
+        <option value="$PROJECT_DIR$/src/pages/About/index.jsx" />
       </list>
     </option>
   </component>
@@ -171,9 +208,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1057" />
+    <option name="x" value="954" />
+    <option name="width" value="965" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -226,21 +263,7 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="HistoryDetails" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Logout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
+              <item name="Register" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="client" type="b2602c69:ProjectViewProjectNode" />
@@ -289,16 +312,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\WORK\MyJSwork\mern_weather\client\src\pages\HistoryDetails" />
-      <recent name="C:\WORK\MyJSwork\mern_weather\client\src\store" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WORK\MyJSwork\mern_weather\client\src\pages" />
       <recent name="C:\WORK\MyJSwork\mern_weather\client\src\store\actions" />
       <recent name="C:\WORK\MyJSwork\mern_weather\client\src\store\thunks" />
       <recent name="C:\WORK\MyJSwork\mern_weather\client\src\pages\HistoryDetails" />
       <recent name="C:\WORK\MyJSwork\mern_weather\client\src\store\reducers" />
-      <recent name="C:\WORK\MyJSwork\mern_weather\client\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\WORK\MyJSwork\mern_weather\client\src\pages\HistoryDetails" />
+      <recent name="C:\WORK\MyJSwork\mern_weather\client\src\store" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -345,7 +368,7 @@
       <workItem from="1563785076909" duration="20418000" />
       <workItem from="1563873423311" duration="20748000" />
       <workItem from="1563957015932" duration="10885000" />
-      <workItem from="1564045008974" duration="5051000" />
+      <workItem from="1564045008974" duration="11943000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1563444978022</created>
@@ -389,14 +412,22 @@
       <option name="project" value="LOCAL" />
       <updated>1563897441806</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="done History + History Details">
+      <created>1564052996225</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564052996225</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72877000" />
+    <option name="totallyTimeSpent" value="79769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840257" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -456,7 +487,8 @@
     <MESSAGE value="done main page with weather request&#10;TODO: save weather request to DB" />
     <MESSAGE value="weather save to db" />
     <MESSAGE value="done history store routine" />
-    <option name="LAST_COMMIT_MESSAGE" value="done history store routine" />
+    <MESSAGE value="done History + History Details" />
+    <option name="LAST_COMMIT_MESSAGE" value="done History + History Details" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -480,13 +512,6 @@
     <entry file="file://$PROJECT_DIR$/src/components/_LoginModal.js" />
     <entry file="file://$PROJECT_DIR$/src/components/LoginModal.js" />
     <entry file="file://$PROJECT_DIR$/src/components/RegisterModal.js" />
-    <entry file="file://$PROJECT_DIR$/src/store/actions/userActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="72" column="29" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -496,20 +521,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/googleAutocomplete.jsx" />
     <entry file="file://$PROJECT_DIR$/src/core/weather.js" />
-    <entry file="file://$PROJECT_DIR$/src/core/axios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/userReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/reactstrap/src/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -535,16 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Login/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,16 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Protected.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/History/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -648,69 +639,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UserData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="36" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="37" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/thunks/detailsThunks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/thunks/userThunks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Register/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-326">
-          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/thunks/weatherThunks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="54" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/HistoryDetails/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -725,20 +659,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/Main/index.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/shared/WeatherTable.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        <state relative-caret-position="439">
+          <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/shared/WeatherTable.jsx">
+    <entry file="file://$PROJECT_DIR$/src/pages/HistoryDetails/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        <state relative-caret-position="565">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/thunks/detailsThunks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="61" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Protected.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Main/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Login/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UserData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Register/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="75" column="6" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="75" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/thunks/userThunks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="98" column="2" lean-forward="true" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/userActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/userReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="80" column="32" lean-forward="true" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/About/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="116" column="30" selection-start-line="116" selection-start-column="30" selection-end-line="116" selection-end-column="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

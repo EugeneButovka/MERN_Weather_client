@@ -29,7 +29,7 @@ class Main extends React.Component {
             return <div>Loading weather from the internet...</div>;
         
         if (this.props.error)
-            return <div>Error! {this.props.weather.error}</div>;
+            return <div>Error! {this.props.error}</div>;
         
         if (!this.props.requestCompleted)
             return <div>Go make some request</div>;

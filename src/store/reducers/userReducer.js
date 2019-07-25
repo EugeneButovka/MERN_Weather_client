@@ -9,10 +9,18 @@ import {
     LOGIN_USER_SUCCESS,
     LOGIN_USER_FAIL,
     
+    GET_CURRENET_USER_REQUEST,
+    GET_CURRENET_USER_SUCCESS,
+    GET_CURRENET_USER_FAIL,
+    
 
     CHECK_LOGIN_REQUEST,
     CHECK_LOGIN_SUCCESS,
     CHECK_LOGIN_FAIL,
+    
+    UPDATE_CURRENT_USER_REQUEST,
+    UPDATE_CURRENT_USER_SUCCESS,
+    UPDATE_CURRENT_USER_FAIL,
     
     LOGOUT_USER
 } from "../actionTypes";
@@ -23,7 +31,8 @@ const initialState = {
     requestCompleted: false,
     error: null,
     currentUserId: null,
-    isLoading: false
+    isLoading: false,
+    currentUserData: {}
 };
 
 export default function (state = initialState, action) {
@@ -49,6 +58,29 @@ export default function (state = initialState, action) {
                 error: 'fail to register',
                 isLoading: false
             };
+    
+    
+        //update current user routine
+        case UPDATE_CURRENT_USER_REQUEST:
+            return {
+                ...state,
+                isLoading: true
+            };
+        case UPDATE_CURRENT_USER_SUCCESS:
+            return {
+                ...state,
+                requestCompleted: true,
+                error: null,
+                isLoading: false
+            };
+        case UPDATE_CURRENT_USER_FAIL:
+            return {
+                ...state,
+                requestCompleted: true,
+                error: 'fail to update info',
+                isLoading: false
+            };
+            
         
         //login routine
         case LOGIN_USER_REQUEST:
@@ -57,13 +89,13 @@ export default function (state = initialState, action) {
                 isLoading: true,
             };
         case LOGIN_USER_SUCCESS:
-            console.log(action);
+            //console.log(action);
             return {
                 ...state,
                 isLogined: true,
                 requestCompleted: true,
                 error: null,
-                currentUserId: action.payload.currentUserId,
+                //currentUserId: action.payload.currentUserId,
                 isLoading: false
             };
         case LOGIN_USER_FAIL:
@@ -97,6 +129,30 @@ export default function (state = initialState, action) {
                 requestCompleted: true,
                 error: 'check login fail',
                 currentUserId: null,
+                isLoading: false
+            };
+    
+    
+        //get info for current user routine
+        case GET_CURRENET_USER_REQUEST:
+            return {
+                ...state,
+                isLoading: true,
+            };
+        case GET_CURRENET_USER_SUCCESS:
+            console.log(action);
+            return {
+                ...state,
+                requestCompleted: true,
+                error: null,
+                isLoading: false,
+                currentUserData: action.payload
+            };
+        case GET_CURRENET_USER_FAIL:
+            return {
+                ...state,
+                requestCompleted: true,
+                error: 'fail to get user data',
                 isLoading: false
             };
             

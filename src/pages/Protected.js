@@ -5,6 +5,7 @@ import { checkLogin } from '../store/thunks/userThunks';
 import Main from '../pages/Main';
 import History from '../pages/History';
 import HistoryDetails from '../pages/HistoryDetails';
+import About from '../pages/About';
 
 
 class Protected extends React.Component {
@@ -25,7 +26,7 @@ class Protected extends React.Component {
                 <Route exact path="/" component={Main} />
                 <Route path="/history" component={History} />
                 <Route path="/historyDetails/:_id" component={HistoryDetails} />
-                <Route path="/about" component={() => <h1>About</h1>} />
+                <Route path="/about" component={About} />
             </Switch>
         )
     }
