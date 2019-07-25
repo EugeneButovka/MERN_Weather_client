@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { checkLogin } from '../store/thunks/userThunks';
 import Main from '../pages/Main';
+import History from '../pages/History';
+import HistoryDetails from '../pages/HistoryDetails';
 
 
 class Protected extends React.Component {
@@ -21,7 +23,8 @@ class Protected extends React.Component {
         return (
             <Switch>
                 <Route exact path="/" component={Main} />
-                <Route path="/history" component={() => <h1>History</h1>} />
+                <Route path="/history" component={History} />
+                <Route path="/historyDetails/:_id" component={HistoryDetails} />
                 <Route path="/about" component={() => <h1>About</h1>} />
             </Switch>
         )

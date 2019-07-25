@@ -34,7 +34,7 @@ class AppNavbarNoRouter extends React.Component {
         this.props.logoutUserAction();
         this.props.history.push('/login');
         this.props.clearWeatherDataAction();
-    }
+    };
     
     handleClick = (path) => {
         switch (path) {

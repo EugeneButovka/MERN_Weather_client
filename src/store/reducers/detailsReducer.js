@@ -1,36 +1,36 @@
 import {
-    GET_WEATHER_HISTORY_REQUEST,
-    GET_WEATHER_HISTORY_SUCCESS,
-    GET_WEATHER_HISTORY_FAIL
+    GET_WEATHER_DETAILS_REQUEST,
+    GET_WEATHER_DETAILS_SUCCESS,
+    GET_WEATHER_DETAILS_FAIL
 } from "../actionTypes";
 
 const initialState = {
-    historyData: {},
+    detailsData: {},
     error: null,
-    isHistoryLoading: false,
+    isDetailsLoading: false,
     requestCompleted: false
 };
 
 export default function (state = initialState, action) {
     switch (action.type) {
-        case GET_WEATHER_HISTORY_REQUEST:
+        case GET_WEATHER_DETAILS_REQUEST:
             return {
                 ...state,
-                isHistoryLoading: true
+                isDetailsLoading: true
             };
-        case GET_WEATHER_HISTORY_SUCCESS:
+        case GET_WEATHER_DETAILS_SUCCESS:
             return {
                 ...state,
                 error: null,
-                isHistoryLoading: false,
-                historyData: action.payload,
+                isDetailsLoading: false,
+                detailsData: action.payload,
                 requestCompleted: true
             };
-        case GET_WEATHER_HISTORY_FAIL:
+        case GET_WEATHER_DETAILS_FAIL:
             return {
                 ...state,
-                isHistoryLoading: false,
-                error: 'weather histroy fail',
+                isDetailsLoading: false,
+                error: 'weather details fail',
                 requestCompleted: true
             };
             

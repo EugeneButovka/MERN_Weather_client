@@ -62,7 +62,6 @@ class Register extends React.Component {
         this.setState({...this.initialState});
         
         //try add user  and set waiting till done
-        this.props.setRegisterUserWaitAction();
         Promise.resolve(this.props.registerUser(newUser))
             .then(this.props.history.push.bind(this,"/"));
     };
