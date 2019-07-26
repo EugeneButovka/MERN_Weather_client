@@ -6,6 +6,7 @@ import {
 import {connect} from 'react-redux';
 import {getWeatherDetails} from '../../store/thunks/detailsThunks';
 import WeatherTable from "../../components/shared/WeatherTable";
+import {StyledHeaderMain} from "../../components/shared/StyledHeaders";
 
 
 class HistoryDetails extends React.Component {
@@ -46,7 +47,9 @@ class HistoryDetails extends React.Component {
         if (!this.props.requestCompleted) return <div>Loading</div>;
         return (
             <Container>
-                <h1 className={'justify-content-sm-center'} style={{width: '100%', display: 'flex'}}>User request data</h1>
+                <StyledHeaderMain>
+                    User request data
+                </StyledHeaderMain>
                 <ListGroup>
                     <ListGroupItem>
                         <Label>

@@ -3,6 +3,7 @@ import {Container} from 'reactstrap';
 import {connect} from 'react-redux';
 import {getWeatherHistory} from '../../store/thunks/historyThunks';
 import HistoryTable from "../../components/HistoryTable";
+import {StyledHeaderMain} from "../../components/shared/StyledHeaders";
 
 
 
@@ -26,7 +27,9 @@ class History extends React.Component {
     render() {
         return (
             <Container>
-                <h1 className={'justify-content-sm-center'} style={{width: '100%', display: 'flex'}}>User Queries</h1>
+                <StyledHeaderMain>
+                    User Queries
+                </StyledHeaderMain>
                 <HistoryTable/>
             </Container>
         );

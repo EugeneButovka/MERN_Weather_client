@@ -8,6 +8,7 @@ import {
 } from 'reactstrap';
 import {connect} from 'react-redux';
 import {getCurrentUser, updateCurrentUser} from '../../store/thunks/userThunks';
+import {StyledHeaderMain, StyledHeaderSecondary} from '../../components/shared/StyledHeaders'
 
 
 class About extends React.Component {
@@ -183,11 +184,17 @@ class About extends React.Component {
         if (!this.props.requestCompleted) return <div>Loading</div>;
         return (
             <Container>
-                <h1 className={'justify-content-sm-center'} style={{width: '100%', display: 'flex'}}>User cabinet</h1>
-                <h2 className={'justify-content-sm-center'} style={{width: '100%', display: 'flex'}}>User Info</h2>
+                <StyledHeaderMain>
+                    User cabinet
+                </StyledHeaderMain>
+                <StyledHeaderSecondary>
+                    User Info
+                </StyledHeaderSecondary>
                 {this.renderUserInfoTable()}
                 <br/>
-                <h2 className={'justify-content-sm-center'} style={{width: '100%', display: 'flex'}}>Edit Info</h2>
+                <StyledHeaderSecondary>
+                    Edit Info
+                </StyledHeaderSecondary>
                 <Card>
                     {this.renderUserDataInput()}
                 </Card>

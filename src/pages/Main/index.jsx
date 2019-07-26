@@ -6,9 +6,24 @@ import {
 import {connect} from 'react-redux';
 import {getWeather} from '../../store/thunks/weatherThunks';
 import WeatherTable from "../../components/shared/WeatherTable";
+import {StyledHeaderMain} from "../../components/shared/StyledHeaders";
+import styled from 'styled-components';
+
+
 
 
 class Main extends React.Component {
+    StyledAutocomplete = styled(Autocomplete).attrs({
+        onPlaceSelected: this.performWeatherRequest,
+        types: (['(regions)']),
+        componentRestrictions: ({country: "ru"})
+    })`
+    width: 100%
+    marginBottom: 2rem
+    marginTop: 1rem`;
+    
+    
+    
     performWeatherRequest = (place) => {
         console.log('Place is set to: ', place);
         try {
@@ -44,14 +59,16 @@ class Main extends React.Component {
     render() {
         return (
             <Container>
-                <h1 className={'justify-content-sm-center'} style={{width: '100%', display: 'flex'}}>Weather
-                    forecast</h1>
+                <StyledHeaderMain>
+                    Weather forecast
+                </StyledHeaderMain>
                 <Autocomplete
                     style={{width: '100%', marginBottom: '2rem', marginTop: '1rem'}}
                     onPlaceSelected={(place) => this.performWeatherRequest(place)}
                     types={['(regions)']}
                     componentRestrictions={{country: "ru"}}
                 />
+                {/*<this.StyledAutocomplete/>*/}
                 {this.renderWeatherTable()}
             </Container>
         );

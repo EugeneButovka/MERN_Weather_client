@@ -13,7 +13,63 @@ const DivFixedStyled = styled.div`
 `;
 
 
-class WeatherTable extends React.Component {
+class WeatherTableRowsCompose extends React.PureComponent {
+    render() {
+        //return null;
+        return (
+            <React.Fragment>
+                {this.props.data.map((rowElement, i) => (
+                    <tr key={i}>
+                        <WeatherTableRow rowData={rowElement}/>
+                    </tr>
+                ))}
+            </React.Fragment>
+        );
+    }
+}
+
+WeatherTableRowsCompose.propTypes = {
+    data: PropTypes.array.isRequired
+};
+
+
+class WeatherTableRow extends React.PureComponent {
+    render() {
+        //return null;
+        return (
+            <React.Fragment>
+                {this.props.rowData.map((cellElement, i) => (
+                    <td key={i}>
+                        <WeatherTableCell cellData={cellElement}/>
+                    </td>
+                ))}
+            </React.Fragment>
+        );
+    }
+}
+
+WeatherTableRow.propTypes = {
+    rowData: PropTypes.array.isRequired
+};
+
+
+class WeatherTableCell extends React.PureComponent {
+    render() {
+        //return null;
+        return (
+            <React.Fragment>
+                {this.props.cellData}
+            </React.Fragment>
+        );
+    }
+}
+
+WeatherTableCell.propTypes = {
+    cellData: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired
+};
+
+
+class WeatherTable extends React.PureComponent {
     weatherDataToArray = (weatherData) => {
         let arr = [];
         let arrRow = [];
@@ -52,6 +108,23 @@ class WeatherTable extends React.Component {
                     </tr>
                     </thead>
                     <tbody>
+                    <WeatherTableRowsCompose data={weatherArray}/>
+                    </tbody>
+                </Table>
+            </DivFixedStyled>
+        );
+        
+        /*return (
+            <DivFixedStyled>
+                <Table dark bordered responsive>
+                    <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Temperature,&#x2103;</th>
+                        <th>Weather Condition</th>
+                    </tr>
+                    </thead>
+                    <tbody>
                     {weatherArray.map((rowElement, i) => (
                         <tr key={i}>
                             {rowElement.map((cellElement, j) => (
@@ -64,7 +137,7 @@ class WeatherTable extends React.Component {
                     </tbody>
                 </Table>
             </DivFixedStyled>
-        )
+        )*/
     }
 }
 
